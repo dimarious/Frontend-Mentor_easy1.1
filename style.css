@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Very-dark-blue-main: hsl(217, 54%, 11%);
+  --Very-dark-blue-card: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  background: var(--Very-dark-blue-main);
+  flex-direction: column;
+  font-size: 18px;
+}
+
+.main {
+  font-family: "Outfit", sans-serif;
+  display: flex;
+}
+
+.card {
+  box-shadow: 1px 3px 19px 20px rgba(0, 0, 0, 0.2);
+  width: 355px;
+  height: 600px;
+  background-color: var(--Very-dark-blue-card);
+  padding: 25px 25px 35px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.main {
+  margin: auto;
+}
+
+.top {
+  height: 305px;
+  width: 305px;
+  background-image: url(./images/image-equilibrium.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.card_img {
+  height: 305px;
+  width: 305px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  background-color: hsl(178, 100%, 50%, 60%);
+}
+
+.top .card_img:hover {
+  opacity: 1;
+}
+.top .card_img img {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.c_img:hover {
+  opacity: 1;
+}
+.header {
+  color: var(--White);
+  font-weight: 600;
+}
+.text {
+  color: var(--Soft-blue);
+  line-height: 25px;
+}
+.value {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.eth {
+  color: var(--Cyan);
+  font-weight: 700;
+  font-family: "Outfit", sans-serif;
+}
+.days {
+  display: flex;
+  color: var(--Soft-blue);
+}
+hr {
+  border-top: 1px solid;
+  border-color: var(--Very-dark-blue-line);
+}
+.footer {
+  display: flex;
+  align-items: center;
+}
+.clock {
+  margin-right: 5px;
+}
+.av_img {
+  width: 30px;
+  border: 1px solid var(--White);
+  border-radius: 50px;
+}
+.user_name {
+  margin-left: 20px;
+  color: var(--White);
+}
+span {
+  color: var(--Soft-blue);
+}
+.header:hover,
+.user_name:hover {
+  color: var(--Cyan);
+  transition: 0.2s ease-in-out;
+}
+.attribution {
+  color: white;
+  position: relative;
+  font-size: 15px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--Cyan);
+}
